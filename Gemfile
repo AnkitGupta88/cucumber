@@ -1,6 +1,10 @@
 source 'https://rubygems.org'
 
+gem 'sequel'
+gem 'mysql2'
+
 group :test do
+  gem 'database_cleaner'
   gem 'cucumber'
   gem 'rspec-expectations'
   gem 'poltergeist', ">= 1.4.0"
