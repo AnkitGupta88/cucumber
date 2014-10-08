@@ -1,4 +1,4 @@
 cucumber
 ========
 
-Cucumber environment seyup with capybara and Phantom.js
+Cucumber environment setup with Capybara and Phantom.js
