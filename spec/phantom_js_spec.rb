@@ -2,10 +2,6 @@ require_relative 'spec_helper'
 require_relative '../features/support/phantom_js'
 
 describe PhantomJS do
-  it 'must return an IO logger object' do
-    PhantomJS::logger.must_be_kind_of IO
-  end
-
   describe '::settings' do
     it 'must return the list of settings as an hash' do
       PhantomJS::settings.must_be_instance_of Hash
@@ -14,10 +10,6 @@ describe PhantomJS do
     it 'must invoke the proxy method' do
       mock(PhantomJS).proxy { {} }
       PhantomJS::settings
-    end
-
-    it 'must include the proxy setting' do
-      PhantomJS::settings.keys.must_include :proxy
     end
   end
 
