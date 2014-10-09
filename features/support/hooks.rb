@@ -1,3 +1,5 @@
+require_relative 'phantom_js'
+
 After do |scenario|
-  save_page if scenario.failed?
+  save_screenshot(PhantomJS::screenshot, full: true) if scenario.failed?
 end

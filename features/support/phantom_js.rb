@@ -10,6 +10,10 @@ module PhantomJS
     File.new(@logger, 'w')
   end
 
+  def screenshot(timestamp = Time.now.strftime('%Y_%m_%d_%H_%M_%S'))
+    File.join(File.dirname(__FILE__), '..', '..', 'screenshots', "screenshot_#{timestamp}.png")
+  end
+
   def settings
     YAML.load_file(@settings_file).tap do |coll|
       coll.merge!(proxy)
