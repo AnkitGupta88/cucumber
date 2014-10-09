@@ -11,4 +11,5 @@ group :test do
   gem 'selenium-webdriver'
   gem 'launchy'
   gem 'rest-client'
+  gem 'rr'
 end

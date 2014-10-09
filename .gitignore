@@ -1,4 +1,5 @@
 .git
 *.lock
 .ruby-gemset
+./log/*
 ./*.html

@@ -1,0 +1,6 @@
+Refused to display document because display forbidden by X-Frame-Options.
+
+Unsafe JavaScript attempt to access frame with URL about:blank from frame with URL file:///Users/costajob/.rvm/gems/ruby-2.1.1@dev/gems/poltergeist-1.5.1/lib/capybara/poltergeist/client/compiled/main.js. Domains, protocols and ports must match.
+
+Unsafe JavaScript attempt to access frame with URL about:blank from frame with URL file:///Users/costajob/.rvm/gems/ruby-2.1.1@dev/gems/poltergeist-1.5.1/lib/capybara/poltergeist/client/compiled/main.js. Domains, protocols and ports must match.
+
