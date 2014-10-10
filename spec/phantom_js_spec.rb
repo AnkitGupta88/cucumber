@@ -1,5 +1,5 @@
 require_relative 'spec_helper'
-require_relative '../features/support/phantom_js'
+require_relative '../lib/phantom_js'
 
 describe PhantomJS do
   describe '::settings' do

@@ -1,6 +1,6 @@
 require 'capybara/cucumber'
 require 'capybara/poltergeist'
-require_relative 'phantom_js'
+require_relative '../../lib/phantom_js'
 
 Capybara.register_driver :poltergeist do |app|
   Capybara::Poltergeist::Driver.new(app, 

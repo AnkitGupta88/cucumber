@@ -3,15 +3,15 @@ require 'yaml'
 module PhantomJS
   extend self
 
-  @settings_file = File.join(File.dirname(__FILE__), '..', '..', 'config', 'phantom_js.yml')
-  @logger = File.join(File.dirname(__FILE__), '..', '..', 'log', 'phantomjs.log')
+  @settings_file = File.join(File.dirname(__FILE__), '..', 'config', 'phantom_js.yml')
+  @logger = File.join(File.dirname(__FILE__), '..', 'log', 'phantomjs.log')
 
   def logger
     File.new(@logger, 'w')
   end
 
   def screenshot(timestamp = Time.now.strftime('%Y_%m_%d_%H_%M_%S'))
-    File.join(File.dirname(__FILE__), '..', '..', 'screenshots', "screenshot_#{timestamp}.png")
+    File.join(File.dirname(__FILE__), '..', 'screenshots', "screenshot_#{timestamp}.png")
   end
 
   def settings

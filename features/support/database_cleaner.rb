@@ -1,6 +1,6 @@
-require_relative '../../config/database'
 require 'database_cleaner'
 require 'database_cleaner/cucumber'
+require_relative '../../config/database'
 
 DatabaseCleaner.strategy = :truncation
 
