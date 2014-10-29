@@ -1,5 +1,6 @@
 .git
 *.lock
 .ruby-gemset
+.vagrant
 log/*.log
 screensots/*.png
