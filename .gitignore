@@ -3,4 +3,4 @@
 .ruby-gemset
 .vagrant
 log/*.log
-screensots/*.png
+screenshots/*.png
