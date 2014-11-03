@@ -12,6 +12,10 @@ apt-get -y install build-essential libxml2-dev libxslt1-dev ruby-dev
 echo installing GIT
 apt-get -y install git
 
+echo installing Phantom.js
+git clone git://github.com/ariya/phantomjs.git
+cd phantomjs && git checkout 1.9 && ./build.sh
+
 echo installing Memcache
 apt-get -y install memcached
 
