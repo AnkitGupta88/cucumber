@@ -7,14 +7,15 @@ apt-add-repository -y ppa:brightbox/ruby-ng > /dev/null 2>&1
 apt-get -y update > /dev/null 2>&1
 
 echo installing utility tools
-apt-get -y install build-essential libxml2-dev libxslt1-dev ruby-dev
+apt-get -y install build-essential libxml2-dev libxslt1-dev ruby-dev chrpath git-core libssl-dev libfontconfig1-dev libxft-dev
 
 echo installing GIT
 apt-get -y install git
 
 echo installing Phantom.js
-git clone git://github.com/ariya/phantomjs.git
-cd phantomjs && git checkout 1.9 && ./build.sh
+cd /usr/local/share && sudo wget https://phantomjs.googlecode.com/files/phantomjs-1.9.0-linux-x86_64.tar.bz2
+sudo tar xjf /usr/local/share/phantomjs-1.9.0-linux-x86_64.tar.bz2
+sudo ln -s /usr/local/share/phantomjs-1.9.0-linux-x8664/bin/phantomjs /usr/local/share/phantomjs; sudo ln -s /usr/local/share/phantomjs-1.9.0-linux-x8664/bin/phantomjs /usr/local/bin/phantomjs; sudo ln -s /usr/local/share/phantomjs-1.9.0-linux-x86_64/bin/phantomjs /usr/bin/phantomjs
 
 echo installing Memcache
 apt-get -y install memcached
