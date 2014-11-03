@@ -6,7 +6,7 @@ gem 'mysql2'
 group :test do
   gem 'database_cleaner'
   gem 'cucumber'
-  gem 'minitest'
+  gem 'rspec-expectations'
   gem 'poltergeist', ">= 1.4.0"
   gem 'launchy'
   gem 'rest-client'
